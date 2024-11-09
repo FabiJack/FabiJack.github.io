@@ -14,7 +14,7 @@ document.querySelectorAll('.heart').forEach(heart => {
 
 // Verificar si el audio debe estar reproduciéndose
 const audio = document.getElementById('background-audio');
-audio.volume = 0.5; // Ajusta el volumen si es necesario
+audio.volume = 1; // Ajusta el volumen si es necesario
 
 // Si está definido en localStorage, ajusta la reproducción
 if (localStorage.getItem('isPlaying') === 'true') {
@@ -30,3 +30,16 @@ function openGallery() {
 // Escuchar el evento para cambiar el estado
 audio.onpause = () => localStorage.setItem('isPlaying', 'false');
 audio.onplay = () => localStorage.setItem('isPlaying', 'true');
+
+// Verifica si el estado de reproducción está guardado en localStorage
+const isPlaying = localStorage.getItem('isPlaying');
+console.log(isPlaying); // Esto mostrará el valor en la consola
+
+if (isPlaying === 'true') {
+    // Si el valor es 'true', inicia la reproducción
+    audio.play();
+} else {
+    // Si no está definido o es 'false', no inicia la reproducción automáticamente
+    audio.pause();
+}
+
