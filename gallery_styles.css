@@ -10,21 +10,40 @@
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columnas de igual tamaño */
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+    grid-template-rows: repeat(2, auto); /* 2 filas */
     gap: 10px;
-    justify-items: center; /* Centra las imágenes dentro de sus celdas */
+    justify-items: center;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.gallery-item {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/*
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px;
+    justify-items: center;
     padding: 20px;
     max-width: 100%;
     margin: 0 auto;
 }
 
 .gallery-item {
-    width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible en su celda */
+    width: 100%;
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
-
+*/
 .gallery img {
     width: 150px; /* Ancho fijo */
     height: 150px; /* Alto fijo */
