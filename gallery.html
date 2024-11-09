@@ -82,8 +82,13 @@
             <img src="amor68.jpg" alt="Foto 68">
             <img src="amor69.jpg" alt="Foto 69">
             <img src="amor70.jpg" alt="Foto 70">         
-            <!-- Añade más imágenes según sea necesario -->
         </div>
+                <!-- Paginador -->
+        <div class="pagination">
+            <button id="prevPage" onclick="changePage(-1)">Anterior</button>
+            <button id="nextPage" onclick="changePage(1)">Siguiente</button>
+        </div>
+
         <button onclick="openIndex()" class="love-button">Te Amo</button>
     </div>
     <audio src="love-story.mp3" autoplay loop></audio>
@@ -95,5 +100,7 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="script_gallery_modal.js"></script>
+    <script src="script_pagination.js"></script>
 </body>
 </html>

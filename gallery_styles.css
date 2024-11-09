@@ -15,6 +15,13 @@
     padding: 20px;
 }
 
+.gallery-item {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
 .gallery img {
     width: 150px; /* Ancho fijo */
     height: 150px; /* Alto fijo */
@@ -78,4 +85,23 @@
 
 .close:hover {
     color: #ff69b4;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.pagination button:hover {
+    background-color: #ff1493;
 }
